@@ -68,7 +68,7 @@ iframe { width:100%; height:100%; border:none; transition:opacity 0.3s ease; dis
 <!-- Sidebar -->
 <div class="sidebar">
     <div class="sidebar-header">
-        <img src="/static/2.png" alt="2 Logo">
+        <img src="2.png" alt="2 Logo">
         <h2>DASHBOARD</h2>
     </div>
     <div class="sidebar-menu">
@@ -185,7 +185,7 @@ function loadPage(file, element) {
     }
 
     setTimeout(()=> {
-        frame.src = '/static/' + file;
+        frame.src = file;
         frame.onload = ()=> frame.classList.remove('loading');
     }, 100);
 }
@@ -218,9 +218,9 @@ function loadPage(file, element) {
 
         let fileName = fileMap[btn.id];
         if(currentFolder === 'hub'){
-            frame.src = `/static/hub/${fileName}`;
+            frame.src = `/hub/${fileName}`;
         } else {
-            frame.src = `/static/${currentFolder}/${fileName}`;
+            frame.src = `/${currentFolder}/${fileName}`;
         }
         document.getElementById("page-title").textContent = btn.textContent.trim();
     });
@@ -232,3 +232,4 @@ function toggleSidebar() {
 </script>
 </body>
 </html>
+
