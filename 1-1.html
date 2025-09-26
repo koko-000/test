@@ -405,7 +405,7 @@
 
   // Run
   document.addEventListener("DOMContentLoaded", () => {
-    loadExcel("/static/1st'Yield Trend of Adjust machine on Aug'25 (Update 24-Aug-25).xlsx",
+    loadExcel("1st'Yield Trend of Adjust machine on Aug'25 (Update 24-Aug-25).xlsx",
       ({ dailyData, monthlyData }) => {
         renderTableVertical("tableMonth", monthlyData, "month");
         createChart(document.getElementById("barChartMonth"), monthlyData, true);
@@ -417,3 +417,4 @@
 </script>
 </body>
 </html>
+
