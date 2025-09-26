@@ -349,7 +349,7 @@ function createChart(ctx, data, labelKey, isMonth=true, y1Min=null, y1Max=null) 
 // run
 document.addEventListener("DOMContentLoaded",async ()=>{
   try{
-    const {sheetData, headerRow, metrics} = await loadExcel("/static/1st'Yield Trend of Contam on Aug'25  (Update 24-Aug-25).xlsx");
+    const {sheetData, headerRow, metrics} = await loadExcel("1st'Yield Trend of Contam on Aug'25  (Update 24-Aug-25).xlsx");
     const dailyData = extractData(sheetData, headerRow, metrics, XLSX.utils.decode_col("DN"), XLSX.utils.decode_col("ER"), "day");
     const monthlyData = extractData(sheetData, headerRow, metrics, XLSX.utils.decode_col("CT"), XLSX.utils.decode_col("DM"), "month");
     
@@ -363,3 +363,4 @@ document.addEventListener("DOMContentLoaded",async ()=>{
 </script>
 </body>
 </html>
+
