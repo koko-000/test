@@ -90,7 +90,7 @@ table thead th {
 <script>
 Chart.register(ChartDataLabels);
 
-const EXCEL_PATH = `/static/00 Shop 1st'Yield (Hub all) on Aug'25 (Update 24-Aug-25).xlsx`;
+const EXCEL_PATH = encodeURI(`00 Shop 1st'Yield (Hub all) on Aug'25 (Update 24-Aug-25).xlsx`);
 const COLOR_PALETTE = [
   '#E6E6FA','#FFDAB9','#C0FF3E','#FFC0CB','#94ff85','#cbe55d','#deaae9','#b5e8ba',
   '#E91E63','#DEB887','#3F51B5','#795548','#FFFACD','#9C27B0','#BA55D3','#8470FF',
@@ -467,3 +467,4 @@ window.addEventListener('load',loadAndBuild);
 </script>
 </body>
 </html>
+
