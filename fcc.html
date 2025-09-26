@@ -193,7 +193,7 @@ function createChart(ctx, data, maxY1){
 
 // --- run ---
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/static/1st'Yield Trend of Adjust machine on Aug'25 (Update 24-Aug-25).xlsx")
+  fetch("1st'Yield Trend of Adjust machine on Aug'25 (Update 24-Aug-25).xlsx")
     .then(res => res.arrayBuffer())
     .then(data => {
       const wb = XLSX.read(data, { type: "array" });
@@ -272,3 +272,4 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 </body>
 </html>
+
