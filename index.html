@@ -185,15 +185,10 @@ function loadPage(file, element) {
     }
 
    setTimeout(()=> {
-    if (file === "1-1.html" || file === "1-2.html") {
-        // โหลดจาก root (อยู่ข้างนอก static)
-        frame.src = file;
-    } else {
-        // โหลดจากโฟลเดอร์ static
-        frame.src = 'static/' + file;
-    }
+    frame.src = 'static/' + file; // ❌ แบบเดิม
     frame.onload = ()=> frame.classList.remove('loading');
 }, 100);
+
 }
 
 // Event listener สำหรับปุ่ม filter
@@ -237,4 +232,5 @@ function toggleSidebar() {
 </script>
 </body>
 </html>
+
 
